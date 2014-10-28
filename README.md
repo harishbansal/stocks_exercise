@@ -5,14 +5,19 @@ A command line utility for stock performance analysis.
 Usage
 ------
 For printing highest stock price month for all the companies mentioned in the csv data file.
-*python stocks.py -f <csv_filename>*
+```bash
+python stocks.py -f <csv_filename>
+```
 
 For printing highest stock price month for a particular company
-*python stocks.py -f <csv_filename> -c <company_name>*
-
+```bash
+python stocks.py -f <csv_filename> -c <company_name>
+```
 
 Unit test execution
-*python test_stocks.py*
+```bash
+python test_stocks.py
+```
 
 File Structure
 --------------
