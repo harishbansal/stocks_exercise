@@ -53,7 +53,11 @@ class Stocks(object):
             print "%40s" % comp_name
             print "%s" % "-" * 80
             print "%s" % "-" * 80
-            print "%-40s%s" % headers[:2]
+            print "%-40s%s" % (headers[0], headers[1])
+            print "%s" % "-" * 80
+            for dat in perf_data[comp_name]:
+                print "%-40s%s" % (dat[0], dat[1])
+            print "%s" % "-" * 80
             print "%s" % "-" * 80
         else:
             for comp_name, result in perf_data.items():
